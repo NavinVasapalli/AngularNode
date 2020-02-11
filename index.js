@@ -16,7 +16,7 @@ mysqlConnection.connect((err) => {
     if (!err)
         console.log('connection successfull');
     else
-        console.log('connection faild');
+        console.log(err);
 });
 
 app.listen(3000, () => console.log('Exppres Server is running at port 3000'));
